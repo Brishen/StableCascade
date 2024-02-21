@@ -178,7 +178,7 @@ class CaptionProcessor:
 
 
 @click.command()
-@click.argument('file', type=click.Path(exists=True), help="Caption text file for generation. One line per caption")
+@click.argument('file', type=click.Path(exists=True))
 @click.option('--caption', type=str, default=None,
               help='Caption to process directly.')
 @click.option('--output-dir', type=click.Path(), default='./output',
